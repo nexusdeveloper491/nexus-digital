@@ -5,7 +5,6 @@
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Python SSG](https://img.shields.io/badge/Python-3.x%20Build%20Engine-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
@@ -15,7 +14,7 @@
 
 *The official, high-performance agency website for Nexus Digital — showcasing cutting-edge Website Design, Full-Stack App Development, Cotmit AI Solutions, Client Case Studies, and Interactive Reviews.*
 
-[🚀 Live Demo / Website](https://nexusdigital.in) • [📂 View Portfolio](#-pages--site-architecture) • [📬 Contact Us](#-get-in-touch)
+[🚀 Live Demo / Website](https://nexusdigital.in) • [📂 View Portfolio](#-site-architecture) • [📬 Contact Us](#-author--credits)
 
 </div>
 
@@ -31,7 +30,6 @@
 - [⚡ Quick Start](#-quick-start)
   - [Prerequisites](#prerequisites)
   - [Local Development](#local-development)
-  - [Python Build Engine (build_site.py)](#python-build-engine-build_sitepy)
 - [🚀 Deployment (Vercel)](#-deployment-vercel)
 - [🎨 Design System & UI Highlights](#-design-system--ui-highlights)
 - [🔍 SEO & Performance](#-seo--performance)
@@ -45,7 +43,7 @@
 
 **Nexus Digital** is a digital agency offering end-to-end technology solutions — from modern high-converting websites and scalable mobile/web applications to custom AI implementations (`Cotmit AI`).
 
-This repository contains the multi-page agency website built with standard-compliant HTML5, high-end dark glassmorphic CSS3 styling, vanilla JavaScript for interactive components, and an automated Python templating and compilation engine (`build_site.py`).
+This repository contains the multi-page agency website built with standard-compliant HTML5, high-end dark glassmorphic CSS3 styling, vanilla JavaScript for interactive components, and optimized edge deployment configuration.
 
 ---
 
@@ -60,16 +58,12 @@ This repository contains the multi-page agency website built with standard-compl
 - **Filterable Case Studies (`portfolio.html`):** Categorized gallery showcasing real client projects, live links, technology stacks, and business impact metrics.
 - **Interactive Reviews Database (`all-reviews.html` & `reviews-database.js`):** Client testimonials categorized with star ratings, verified badges, and search filtering.
 
-### ⚡ 3. Python Static Build Engine (`build_site.py`)
-- Automated script to assemble common layout components (Header, Footer, Navigation, Meta Tags) across all HTML routes.
-- Ensures design uniformity and effortless global updates.
-
-### 📱 4. Ultra-Responsive Modern Aesthetics
+### 📱 3. Ultra-Responsive Modern Aesthetics
 - Dark mode glassmorphism with dynamic neon gradient accents.
 - Smooth scroll transitions, interactive cards with hover lift states, and animated statistic counters.
 - Accessible hamburger drawer navigation on mobile and tablet screens.
 
-### 🌐 5. Production-Ready Deployment Configuration
+### 🌐 4. Production-Ready Deployment Configuration
 - Integrated `vercel.json` with `cleanUrls: true` and optimized caching headers for lightning-fast edge delivery.
 
 ---
@@ -98,7 +92,6 @@ flowchart TD
     end
 
     subgraph BuildPipeline ["Build & Deployment"]
-        BuildPy["build_site.py (Python SSG / Templating)"] -.->|Compiles / Synchronizes| Pages
         VercelConfig["vercel.json (Clean URLs & Edge Caching)"] --> Edge[("Vercel Edge Network")]
     end
 ```
@@ -107,12 +100,11 @@ flowchart TD
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-| :--- | :--- |
+| Layer | Technology | Description |
+| :--- | :--- | :--- |
 | **HTML5** | Semantic structure, SEO-optimized markup, OpenGraph social cards |
 | **CSS3** | Dark mode design system, Glassmorphism, CSS Grid, Flexbox, Keyframes |
 | **JavaScript (ES6+)** | Dynamic DOM interactions, mobile drawer, review filtering, animations |
-| **Python 3** | Automated multi-page template compiler (`build_site.py`) |
 | **Vercel** | Global edge hosting with automated clean URL routing |
 
 ---
@@ -131,7 +123,6 @@ NexusDigital/
 ├── about.html                 # About the agency, story & vision
 ├── all-reviews.html           # Verified customer testimonials & ratings
 ├── app-development.html       # Mobile, Web & Cloud app engineering
-├── build_site.py              # Automated Python site generator / compiler
 ├── contact.html               # Contact form, direct lines & consultation
 ├── cotmit-ai.html             # AI automation & LLM solutions portal
 ├── favicon.png                # Brand favicon
@@ -178,15 +169,6 @@ NexusDigital/
    - **Option C (VS Code Live Server):** Right-click `index.html` and select **"Open with Live Server"**.
 
 3. Open **`http://localhost:3000`** in your browser.
-
----
-
-### Python Build Engine (`build_site.py`)
-
-If you modify common components (like header navigation or footer), regenerate the pages using:
-```bash
-python build_site.py
-```
 
 ---
 
