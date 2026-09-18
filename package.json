@@ -1,0 +1,8 @@
+{
+  "name": "nexus-digital-website",
+  "version": "1.0.0",
+  "description": "Nexus Digital multi-page website design",
+  "scripts": {
+    "start": "npx -y serve ."
+  }
+}

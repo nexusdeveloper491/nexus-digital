@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>All Verified Client Reviews & Ratings | Nexus Digital</title>
+  <meta name="title" content="All Verified Client Reviews & Ratings | Nexus Digital">
+  <meta name="description" content="Read all verified client reviews, project ratings, and feedback for Nexus Digital. Hand-coded web design & development agency.">
+  <link rel="canonical" href="https://nexusdigital.net.in/all-reviews">
+  <meta name="theme-color" content="#4f46e5">
+
+  <!-- Favicon & Styles -->
+  <link rel="icon" type="image/png" href="https://nexusdigital.net.in/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="https://nexusdigital.net.in/favicon.png">
+  <link rel="apple-touch-icon" href="https://nexusdigital.net.in/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="/" class="logo">
+        <img src="assets/images/logo.png" alt="Nexus Digital Logo" class="nav-logo-img">
+        <div class="logo-text">
+          <span class="brand-title">Nexus<span style="color: var(--primary)">Digital</span></span>
+          <span class="brand-tagline">Digital Marketing</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="about" class="nav-link">About Us</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              Services <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="website-design" class="dropdown-item">
+                <span><i class="fas fa-laptop-code" style="margin-right:8px; color:var(--primary);"></i> Website Development</span>
+                <span class="badge badge-available">Available Now</span>
+              </a>
+              <a href="app-development" class="dropdown-item">
+                <span><i class="fas fa-mobile-screen-button" style="margin-right:8px; color:var(--primary);"></i> App Development</span>
+                <span class="badge badge-available">Available Now</span>
+              </a>
+              <a href="cotmit-ai" class="dropdown-item">
+                <span><i class="fas fa-brain" style="margin-right:8px; color:var(--primary);"></i> Cotmit AI</span>
+                <span class="badge badge-progress">In Progress</span>
+              </a>
+              <a href="javascript:void(0)" onclick="notifyUnavailable('Run Ads & Campaign Management')" class="dropdown-item">
+                <span><i class="fas fa-bullhorn" style="margin-right:8px; color:var(--text-dim);"></i> Run Ads</span>
+                <span class="badge badge-unavailable">Coming Soon</span>
+              </a>
+              <a href="javascript:void(0)" onclick="notifyUnavailable('Social Media Marketing')" class="dropdown-item">
+                <span><i class="fas fa-share-nodes" style="margin-right:8px; color:var(--text-dim);"></i> Social Media Marketing</span>
+                <span class="badge badge-unavailable">Coming Soon</span>
+              </a>
+              <a href="javascript:void(0)" onclick="notifyUnavailable('Digital Marketing')" class="dropdown-item">
+                <span><i class="fas fa-chart-line" style="margin-right:8px; color:var(--text-dim);"></i> Digital Marketing</span>
+                <span class="badge badge-unavailable">Coming Soon</span>
+              </a>
+            </div>
+          </li>
+          <li><a href="portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="contact" class="nav-link">Contact Us</a></li>
+          <li class="mobile-cta-item">
+            <a href="https://www.fiverr.com/s/VYjxoKm" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center;">Get Started <i class="fas fa-arrow-right"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions" style="display: flex; align-items: center; gap: 15px;">
+        <a href="https://www.fiverr.com/s/VYjxoKm" target="_blank" class="btn btn-primary nav-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="padding: 150px 0 40px; background: radial-gradient(circle at 50% 20%, rgba(79, 70, 229, 0.08) 0%, transparent 60%); text-align: center;">
+    <div class="container">
+      <div class="section-tag" style="margin: 0 auto 12px;"><i class="fas fa-comments" style="color: var(--primary);"></i> Client Testimonials</div>
+      <h1 style="font-size: 2.8rem; font-weight: 800; margin-bottom: 12px;">Verified Client <span class="gradient-text">Reviews & Ratings</span></h1>
+      <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 600px; margin: 0 auto;">Read transparent feedback, star ratings, and real project screenshots uploaded by our happy clients.</p>
+    </div>
+  </section>
+
+  <!-- Main All Reviews Container Section -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <!-- Live Flipkart Style All Reviews Page Container -->
+      <div id="flipkartAllReviewsPageContainer">
+        <!-- Rendered dynamically by js/reviews-database.js -->
+      </div>
+    </div>
+  </section>
+
+    <!-- Ultra-Professional Agency Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <a href="/" class="logo" style="margin-bottom: 18px;">
+            <img src="assets/images/logo.png" alt="Nexus Digital Logo" class="nav-logo-img">
+            <div class="logo-text">
+              <span class="brand-title" style="color: #ffffff;">Nexus<span
+                  style="color: var(--primary)">Digital</span></span>
+              <span class="brand-tagline" style="color: #94a3b8;">Digital Marketing</span>
+            </div>
+          </a>
+          <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6; margin-bottom: 22px;">Crafting bespoke,
+            high-converting digital experiences that elevate modern brands & drive real growth.</p>
+                    <div class="footer-socials">
+            <a href="https://wa.me/919475320402" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61592571871118" target="_blank" title="Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nexusofficial.digital/" target="_blank" title="Instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/nexus-digital2/" target="_blank" title="LinkedIn"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="/"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="website-design"><i class="fas fa-chevron-right"></i> Website Design</a></li>
+            <li><a href="portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+            <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Direct Contact -->
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-phone"></i>
+              <div>
+                <span>Call Us</span><a href="tel:+918972722259" style="display:block;">+91 89727 22259</a><a href="tel:+919475320402" style="display:block; margin-top:2px;">+91 94753 20402</a></div>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span>Email Us</span>
+                <a href="mailto:contact@nexusdigital.net.in">contact@nexusdigital.net.in</a>
+              </div>
+            </li>
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <div>
+                <span>Address</span>
+                <p>Saratnagar, Ashokenagar Kalyangarh, WB - 743223</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col">
+          <h4 style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin-bottom: 22px; position: relative; padding-bottom: 10px;">Newsletter</h4>
+          <p style="color: #94a3b8; font-size: 0.88rem; line-height: 1.6; margin-bottom: 16px;">Subscribe to get the latest web design tips, marketing strategies & exclusive updates.</p>
+          <form action="https://formsubmit.co/nexusofficial.digital@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
+            <input type="hidden" name="_subject" value="New Newsletter Subscriber - Nexus Digital">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <div style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
+              <input type="email" name="email" placeholder="Enter your email address" required style="width: 100%; padding: 12px 16px; border-radius: 8px; background: #1e293b; border: 1px solid #334155; color: #ffffff; font-size: 0.9rem; outline: none; box-sizing: border-box;">
+              <button type="submit" style="width: 100%; padding: 12px 20px; border-radius: 8px; background: linear-gradient(135deg, #4f46e5, #4338ca); color: #ffffff; font-weight: 700; font-size: 0.9rem; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);"><i class="fas fa-paper-plane"></i> Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+          <p>&copy; 2026 Nexus Digital. All Rights Reserved. Engineered with precision.</p>
+          <div class="footer-bottom-right">
+            <div class="footer-legal-nav">
+              <a href="privacy-policy" class="footer-legal-link">Privacy Policy</a>
+              <span class="footer-legal-divider">•</span>
+              <a href="terms-and-conditions" class="footer-legal-link">Terms & Conditions</a>
+            </div>
+            <button onclick="scrollToTop()" class="back-to-top-btn" title="Back to Top">
+              Back to Top <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <!-- Supabase Cloud DB SDK & Flipkart Reviews Engine -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/reviews-database.js"></script>
+</body>
+</html>
+
+
+
+
+
