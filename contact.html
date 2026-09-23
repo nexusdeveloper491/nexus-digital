@@ -83,30 +83,116 @@
               Services <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i>
             </a>
             <div class="dropdown-menu">
-              <a href="website-design" class="dropdown-item">
-                <span><i class="fas fa-laptop-code" style="margin-right:8px; color:var(--primary);"></i> Website Development</span>
-                <span class="badge badge-available">Available Now</span>
-              </a>
-              <a href="app-development" class="dropdown-item">
-                <span><i class="fas fa-mobile-screen-button" style="margin-right:8px; color:var(--primary);"></i> App Development</span>
-                <span class="badge badge-available">Available Now</span>
-              </a>
-              <a href="cotmit-ai" class="dropdown-item">
-                <span><i class="fas fa-brain" style="margin-right:8px; color:var(--primary);"></i> Cotmit AI</span>
-                <span class="badge badge-progress">In Progress</span>
-              </a>
-              <a href="javascript:void(0)" onclick="notifyUnavailable('Run Ads & Campaign Management')" class="dropdown-item">
-                <span><i class="fas fa-bullhorn" style="margin-right:8px; color:var(--text-dim);"></i> Run Ads</span>
-                <span class="badge badge-unavailable">Coming Soon</span>
-              </a>
-              <a href="javascript:void(0)" onclick="notifyUnavailable('Social Media Marketing')" class="dropdown-item">
-                <span><i class="fas fa-share-nodes" style="margin-right:8px; color:var(--text-dim);"></i> Social Media Marketing</span>
-                <span class="badge badge-unavailable">Coming Soon</span>
-              </a>
-              <a href="javascript:void(0)" onclick="notifyUnavailable('Digital Marketing')" class="dropdown-item">
-                <span><i class="fas fa-chart-line" style="margin-right:8px; color:var(--text-dim);"></i> Digital Marketing</span>
-                <span class="badge badge-unavailable">Coming Soon</span>
-              </a>
+              <div class="dropdown-mega-grid">
+                
+                <!-- Col 1: Development -->
+                <div class="dropdown-col">
+                  <div class="dropdown-col-title">
+                    <i class="fas fa-laptop-code"></i> Development
+                  </div>
+                  <div class="dropdown-items-group">
+                    <a href="website-design" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-code"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Website Development</span>
+                        </div>
+                        <p class="dropdown-service-desc">Custom hand-coded & high-performance websites</p>
+                      </div>
+                    </a>
+                    <a href="app-development" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-mobile-screen-button"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">App Development</span>
+                        </div>
+                        <p class="dropdown-service-desc">Bespoke iOS & Android cross-platform apps</p>
+                      </div>
+                    </a>
+                    <a href="cotmit-ai" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-brain"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Cotmit AI</span>
+                        </div>
+                        <p class="dropdown-service-desc">Autonomous AI agents & custom LLM automation</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Col 2: Marketing -->
+                <div class="dropdown-col">
+                  <div class="dropdown-col-title">
+                    <i class="fas fa-bullhorn"></i> Marketing
+                  </div>
+                  <div class="dropdown-items-group">
+                    <a href="javascript:void(0)" onclick="notifyUnavailable('Run Ads & Campaign Management')" class="dropdown-service-card dropdown-service-card-muted">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Run Ads</span>
+                          <span class="dropdown-status-text">Coming Soon</span>
+                        </div>
+                        <p class="dropdown-service-desc">Targeted Google, Meta & LinkedIn paid ads</p>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="notifyUnavailable('Social Media Marketing')" class="dropdown-service-card dropdown-service-card-muted">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-share-nodes"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Social Media Marketing</span>
+                          <span class="dropdown-status-text">Coming Soon</span>
+                        </div>
+                        <p class="dropdown-service-desc">Organic content strategy & community growth</p>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="notifyUnavailable('Digital Marketing')" class="dropdown-service-card dropdown-service-card-muted">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-chart-line"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Digital Marketing</span>
+                          <span class="dropdown-status-text">Coming Soon</span>
+                        </div>
+                        <p class="dropdown-service-desc">Full-funnel digital marketing & SEO strategies</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Col 3: White Label -->
+                <div class="dropdown-col">
+                  <div class="dropdown-col-title">
+                    <i class="fas fa-handshake"></i> White Label
+                  </div>
+                  <div class="dropdown-items-group">
+                    <a href="white-label-development" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-handshake"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">White-Label Web Dev</span>
+                        </div>
+                        <p class="dropdown-service-desc">100% unbranded backend dev partner for agencies</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </li>
           <li><a href="portfolio" class="nav-link">Portfolio</a></li>
@@ -222,9 +308,12 @@
             <div class="form-group">
               <label for="formSubject">Interested Service *</label>
               <select id="formSubject" class="form-control" required style="cursor: pointer;">
-                <option value="Website Design (Active)">Website Design (Available)</option>
-                <option value="Run Ads (Notify Me)" disabled>Run Ads (Unavailable - Coming Soon)</option>
-                <option value="Social Media Marketing (Notify Me)" disabled>Social Media Marketing (Unavailable - Coming Soon)</option>
+                <option value="Website Development">Website Development</option>
+                <option value="App Development">App Development</option>
+                <option value="Cotmit AI">Cotmit AI</option>
+                <option value="Run Ads" disabled style="color: #94a3b8; background-color: #f8fafc;">Run Ads</option>
+                <option value="Social Media Marketing" disabled style="color: #94a3b8; background-color: #f8fafc;">Social Media Marketing</option>
+                <option value="Digital Marketing" disabled style="color: #94a3b8; background-color: #f8fafc;">Digital Marketing</option>
                 <option value="General Inquiry">General Inquiry</option>
               </select>
             </div>
@@ -260,51 +349,62 @@
             <i class="fas fa-plus icon-plus"></i>
           </div>
           <div class="faq-answer">
-            Currently, our primary focus is <strong>Website Design & Development</strong>. Our team builds custom, responsive, high-performing websites. Other services such as <em>Run Ads</em> and <em>Social Media Marketing</em> are coming soon as we expand our agency offerings.
+            We actively deliver <strong>Website Design & Development</strong>, bespoke <strong>iOS & Android App Development</strong>, and enterprise <strong>Cotmit AI Agent Solutions</strong>. We also provide dedicated <strong>White-Label Development</strong> for agencies. Full-scale marketing services (<em>Run Ads, Social Media & Digital Marketing</em>) are launching in our upcoming phase.
           </div>
         </div>
 
         <!-- FAQ 2 -->
         <div class="faq-item">
           <div class="faq-question">
-            <span>2. How long does it take to complete a web design project?</span>
+            <span>2. How long does it take to complete a project?</span>
             <i class="fas fa-plus icon-plus"></i>
           </div>
           <div class="faq-answer">
-            Timeline depends on project scope. A standard multi-page website usually takes between 1 to 3 weeks from initial concept and design wireframing to final code deployment.
+            Timelines depend on complexity. Standard custom websites take between 1 to 3 weeks, mobile apps typically take 3 to 6 weeks, and Cotmit AI agent workflows take 1 to 2 weeks for full setup, testing, and deployment.
           </div>
         </div>
 
         <!-- FAQ 3 -->
         <div class="faq-item">
           <div class="faq-question">
-            <span>3. Are your websites mobile-responsive and SEO optimized?</span>
+            <span>3. Do you provide White-Label development for agencies?</span>
             <i class="fas fa-plus icon-plus"></i>
           </div>
           <div class="faq-answer">
-            Yes! Every website designed by Nexus Digital is 100% mobile-friendly, tested across all screen resolutions, and constructed with clean semantic HTML5 and meta optimization for fast search engine indexing.
+            Yes! We act as an invisible, dedicated development partner for marketing, SEO, and design agencies under 100% strict NDAs with zero direct client contact and custom-structured contracts.
           </div>
         </div>
 
         <!-- FAQ 4 -->
         <div class="faq-item">
           <div class="faq-question">
-            <span>4. Can I get a custom quote for my website idea?</span>
+            <span>4. Are your websites and mobile apps SEO-ready & high-performance?</span>
             <i class="fas fa-plus icon-plus"></i>
           </div>
           <div class="faq-answer">
-            Absolutely! You can fill out the contact form above or reach out directly to contact@nexusdigital.net.in with your project outline, and we will send a tailored project proposal within 24 hours.
+            Every digital product built by Nexus Digital is hand-coded for maximum speed, 100% mobile-responsiveness, high Core Web Vitals scores, and clean semantic architecture for rapid search engine indexing.
           </div>
         </div>
 
         <!-- FAQ 5 -->
         <div class="faq-item">
           <div class="faq-question">
-            <span>5. When will "Run Ads" and "Social Media Marketing" services be available?</span>
+            <span>5. Can I get a tailored proposal or consultation for my project?</span>
             <i class="fas fa-plus icon-plus"></i>
           </div>
           <div class="faq-answer">
-            We are currently upgrading our marketing automation suites and creative teams. You can click on the service badges or contact us to get added to our early access priority list.
+            Absolutely! You can submit your requirements via the contact form above or reach us directly on WhatsApp (+91 94753 20402). We evaluate your goals and send a transparent, custom project proposal within 24 hours.
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>6. When will "Run Ads" & "Digital Marketing" services go live?</span>
+            <i class="fas fa-plus icon-plus"></i>
+          </div>
+          <div class="faq-answer">
+            We are currently upgrading our marketing automation suites and campaign analytics frameworks. You can contact us to get added to our early access priority notification list.
           </div>
         </div>
 
@@ -354,15 +454,15 @@
           </div>
         </div>
 
-        <!-- Col 2: Quick Links -->
+                <!-- Col 2: Useful Links -->
         <div class="footer-col">
-          <h4>Navigation</h4>
+          <h4>Useful Links</h4>
           <ul class="footer-links">
-            <li><a href="/"><i class="fas fa-chevron-right"></i> Home</a></li>
-            <li><a href="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
-            <li><a href="website-design"><i class="fas fa-chevron-right"></i> Website Design</a></li>
+            <li><a href="website-design"><i class="fas fa-chevron-right"></i> Website Development</a></li>
+            <li><a href="app-development"><i class="fas fa-chevron-right"></i> App Development</a></li>
+            <li><a href="cotmit-ai"><i class="fas fa-chevron-right"></i> Cotmit AI</a></li>
+            <li><a href="white-label-development"><i class="fas fa-chevron-right"></i> White-Label Web Dev</a></li>
             <li><a href="portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-            <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
           </ul>
         </div>
 

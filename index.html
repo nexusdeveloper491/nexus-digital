@@ -151,30 +151,116 @@
               Services <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i>
             </a>
             <div class="dropdown-menu">
-              <a href="website-design" class="dropdown-item">
-                <span><i class="fas fa-laptop-code" style="margin-right:8px; color:var(--primary);"></i> Website Development</span>
-                <span class="badge badge-available">Available Now</span>
-              </a>
-              <a href="app-development" class="dropdown-item">
-                <span><i class="fas fa-mobile-screen-button" style="margin-right:8px; color:var(--primary);"></i> App Development</span>
-                <span class="badge badge-available">Available Now</span>
-              </a>
-              <a href="cotmit-ai" class="dropdown-item">
-                <span><i class="fas fa-brain" style="margin-right:8px; color:var(--primary);"></i> Cotmit AI</span>
-                <span class="badge badge-progress">In Progress</span>
-              </a>
-              <a href="javascript:void(0)" onclick="notifyUnavailable('Run Ads & Campaign Management')" class="dropdown-item">
-                <span><i class="fas fa-bullhorn" style="margin-right:8px; color:var(--text-dim);"></i> Run Ads</span>
-                <span class="badge badge-unavailable">Coming Soon</span>
-              </a>
-              <a href="javascript:void(0)" onclick="notifyUnavailable('Social Media Marketing')" class="dropdown-item">
-                <span><i class="fas fa-share-nodes" style="margin-right:8px; color:var(--text-dim);"></i> Social Media Marketing</span>
-                <span class="badge badge-unavailable">Coming Soon</span>
-              </a>
-              <a href="javascript:void(0)" onclick="notifyUnavailable('Digital Marketing')" class="dropdown-item">
-                <span><i class="fas fa-chart-line" style="margin-right:8px; color:var(--text-dim);"></i> Digital Marketing</span>
-                <span class="badge badge-unavailable">Coming Soon</span>
-              </a>
+              <div class="dropdown-mega-grid">
+                
+                <!-- Col 1: Development -->
+                <div class="dropdown-col">
+                  <div class="dropdown-col-title">
+                    <i class="fas fa-laptop-code"></i> Development
+                  </div>
+                  <div class="dropdown-items-group">
+                    <a href="website-design" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-code"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Website Development</span>
+                        </div>
+                        <p class="dropdown-service-desc">Custom hand-coded & high-performance websites</p>
+                      </div>
+                    </a>
+                    <a href="app-development" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-mobile-screen-button"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">App Development</span>
+                        </div>
+                        <p class="dropdown-service-desc">Bespoke iOS & Android cross-platform apps</p>
+                      </div>
+                    </a>
+                    <a href="cotmit-ai" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-brain"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Cotmit AI</span>
+                        </div>
+                        <p class="dropdown-service-desc">Autonomous AI agents & custom LLM automation</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Col 2: Marketing -->
+                <div class="dropdown-col">
+                  <div class="dropdown-col-title">
+                    <i class="fas fa-bullhorn"></i> Marketing
+                  </div>
+                  <div class="dropdown-items-group">
+                    <a href="javascript:void(0)" onclick="notifyUnavailable('Run Ads & Campaign Management')" class="dropdown-service-card dropdown-service-card-muted">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Run Ads</span>
+                          <span class="dropdown-status-text">Coming Soon</span>
+                        </div>
+                        <p class="dropdown-service-desc">Targeted Google, Meta & LinkedIn paid ads</p>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="notifyUnavailable('Social Media Marketing')" class="dropdown-service-card dropdown-service-card-muted">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-share-nodes"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Social Media Marketing</span>
+                          <span class="dropdown-status-text">Coming Soon</span>
+                        </div>
+                        <p class="dropdown-service-desc">Organic content strategy & community growth</p>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="notifyUnavailable('Digital Marketing')" class="dropdown-service-card dropdown-service-card-muted">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-chart-line"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Digital Marketing</span>
+                          <span class="dropdown-status-text">Coming Soon</span>
+                        </div>
+                        <p class="dropdown-service-desc">Full-funnel digital marketing & SEO strategies</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Col 3: White Label -->
+                <div class="dropdown-col">
+                  <div class="dropdown-col-title">
+                    <i class="fas fa-handshake"></i> White Label
+                  </div>
+                  <div class="dropdown-items-group">
+                    <a href="white-label-development" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-handshake"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">White-Label Web Dev</span>
+                        </div>
+                        <p class="dropdown-service-desc">100% unbranded backend dev partner for agencies</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </li>
           <li><a href="portfolio" class="nav-link">Portfolio</a></li>
@@ -748,7 +834,7 @@
           </div>
 
           <div class="cta-action-side">
-            <a href="contact" class="btn btn-cta-main">Get Free Proposal <i class="fas fa-arrow-right"></i></a>
+            <a href="contact" class="btn btn-cta-main"><span>Get Free Proposal</span> <i class="fas fa-arrow-right"></i></a>
             <a href="https://wa.me/919475320402" target="_blank" class="btn btn-cta-whatsapp"><i
                 class="fab fa-whatsapp"></i> Chat On WhatsApp</a>
           </div>
@@ -799,15 +885,15 @@
           </div>
         </div>
 
-        <!-- Col 2: Quick Links -->
+                <!-- Col 2: Useful Links -->
         <div class="footer-col">
-          <h4>Navigation</h4>
+          <h4>Useful Links</h4>
           <ul class="footer-links">
-            <li><a href="/"><i class="fas fa-chevron-right"></i> Home</a></li>
-            <li><a href="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
-            <li><a href="website-design"><i class="fas fa-chevron-right"></i> Website Design</a></li>
+            <li><a href="website-design"><i class="fas fa-chevron-right"></i> Website Development</a></li>
+            <li><a href="app-development"><i class="fas fa-chevron-right"></i> App Development</a></li>
+            <li><a href="cotmit-ai"><i class="fas fa-chevron-right"></i> Cotmit AI</a></li>
+            <li><a href="white-label-development"><i class="fas fa-chevron-right"></i> White-Label Web Dev</a></li>
             <li><a href="portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-            <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
           </ul>
         </div>
 

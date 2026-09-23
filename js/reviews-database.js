@@ -285,7 +285,7 @@ function renderFlipkartReviewSection() {
         </div>
 
         <button onclick="openReviewModal()" class="btn-write-review">
-          <i class="fas fa-pen-to-square"></i> Rate & Write Review
+          <i class="fas fa-pen-to-square"></i> <span>Rate &amp; Write Review</span>
         </button>
       </div>
 
@@ -375,7 +375,7 @@ function renderFlipkartAllReviewsPage() {
         </div>
         <div class="summary-total-ratings">${m.total} ratings and ${m.total} reviews</div>
         <div class="summary-overall-score">${m.avgOverall} <span style="font-size:1.2rem;">out of 5</span></div>
-        <button onclick="openReviewModal()" class="btn-write-review-alt" style="margin-top:14px;"><i class="fas fa-pen-to-square"></i> Rate & Write Review</button>
+        <button onclick="openReviewModal()" class="btn-write-review-alt" style="margin-top:14px;"><i class="fas fa-pen-to-square"></i> <span>Rate &amp; Write Review</span></button>
       </div>
 
       <div class="top-summary-right">

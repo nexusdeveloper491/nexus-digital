@@ -510,7 +510,7 @@ function openCaseStudyModal(projectId) {
   modalOverlay.innerHTML = `
     <div class="portfolio-modal-box">
       <button onclick="closeCaseStudyModal()" class="modal-close-btn" aria-label="Close Modal"><i class="fas fa-xmark"></i></button>
-      ${data.liveUrl ? `<a href="${data.liveUrl}" target="_blank" title="Click to visit live website" style="display:block; position:relative; text-decoration:none;"><img src="${data.image}" alt="${data.title}" class="modal-header-img" style="width:100%; height:auto; display:block; border-radius:12px 12px 0 0;" /><div style="position:absolute; bottom:12px; right:12px; background:rgba(15,23,42,0.88); color:#ffffff; padding:6px 14px; border-radius:20px; font-size:0.8rem; font-weight:700; backdrop-filter:blur(4px); display:flex; align-items:center; gap:6px; border:1px solid rgba(255,255,255,0.25);"><i class="fas fa-external-link-alt" style="color:#38bdf8;"></i> Visit Live Website</div></a>` : `<img src="${data.image}" alt="${data.title}" class="modal-header-img" style="width:100%; height:auto; display:block; border-radius:12px 12px 0 0;" />`}
+      <img src="${data.image}" alt="${data.title}" class="modal-header-img" style="width:100%; height:auto; display:block; border-radius:12px 12px 0 0;" />
       <div class="modal-body-content">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
           <span class="badge badge-available">${data.category}</span>
@@ -530,8 +530,8 @@ function openCaseStudyModal(projectId) {
         </ul>
 
         <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-          ${data.liveUrl ? `<a href="${data.liveUrl}" target="_blank" class="btn btn-primary" style="flex: 1; text-align: center;"><i class="fas fa-globe"></i> Visit Live Website</a>` : ``}<a href="contact" class="btn btn-secondary" style="flex: 1; text-align: center;"><i class="fas fa-paper-plane"></i> Request Similar Project</a>
-          <button onclick="closeCaseStudyModal()" class="btn btn-outline" style="padding: 10px 24px;">Close</button>
+          ${data.liveUrl ? `<a href="${data.liveUrl}" target="_blank" class="btn btn-primary" style="flex: 1; text-align: center;"><i class="fas fa-globe"></i> Visit Live Website</a>` : ``}
+          <a href="contact" class="btn ${data.liveUrl ? 'btn-secondary' : 'btn-primary'}" style="flex: 1; text-align: center;"><i class="fas fa-paper-plane"></i> Request Similar Project</a>
         </div>
       </div>
     </div>
@@ -755,3 +755,5 @@ initGeoCurrencyEngine();
 document.addEventListener('DOMContentLoaded', () => {
   initGeoCurrencyEngine();
 });
+
+

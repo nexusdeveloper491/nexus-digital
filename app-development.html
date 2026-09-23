@@ -48,30 +48,116 @@
               Services <i class="fas fa-chevron-down" style="font-size: 0.75rem;"></i>
             </a>
             <div class="dropdown-menu">
-              <a href="website-design" class="dropdown-item">
-                <span><i class="fas fa-laptop-code" style="margin-right:8px; color:var(--primary);"></i> Website Development</span>
-                <span class="badge badge-available">Available Now</span>
-              </a>
-              <a href="app-development" class="dropdown-item">
-                <span><i class="fas fa-mobile-screen-button" style="margin-right:8px; color:var(--primary);"></i> App Development</span>
-                <span class="badge badge-available">Available Now</span>
-              </a>
-              <a href="cotmit-ai" class="dropdown-item">
-                <span><i class="fas fa-brain" style="margin-right:8px; color:var(--primary);"></i> Cotmit AI</span>
-                <span class="badge badge-progress">In Progress</span>
-              </a>
-              <a href="javascript:void(0)" onclick="notifyUnavailable('Run Ads & Campaign Management')" class="dropdown-item">
-                <span><i class="fas fa-bullhorn" style="margin-right:8px; color:var(--text-dim);"></i> Run Ads</span>
-                <span class="badge badge-unavailable">Coming Soon</span>
-              </a>
-              <a href="javascript:void(0)" onclick="notifyUnavailable('Social Media Marketing')" class="dropdown-item">
-                <span><i class="fas fa-share-nodes" style="margin-right:8px; color:var(--text-dim);"></i> Social Media Marketing</span>
-                <span class="badge badge-unavailable">Coming Soon</span>
-              </a>
-              <a href="javascript:void(0)" onclick="notifyUnavailable('Digital Marketing')" class="dropdown-item">
-                <span><i class="fas fa-chart-line" style="margin-right:8px; color:var(--text-dim);"></i> Digital Marketing</span>
-                <span class="badge badge-unavailable">Coming Soon</span>
-              </a>
+              <div class="dropdown-mega-grid">
+                
+                <!-- Col 1: Development -->
+                <div class="dropdown-col">
+                  <div class="dropdown-col-title">
+                    <i class="fas fa-laptop-code"></i> Development
+                  </div>
+                  <div class="dropdown-items-group">
+                    <a href="website-design" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-code"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Website Development</span>
+                        </div>
+                        <p class="dropdown-service-desc">Custom hand-coded & high-performance websites</p>
+                      </div>
+                    </a>
+                    <a href="app-development" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-mobile-screen-button"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">App Development</span>
+                        </div>
+                        <p class="dropdown-service-desc">Bespoke iOS & Android cross-platform apps</p>
+                      </div>
+                    </a>
+                    <a href="cotmit-ai" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-brain"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Cotmit AI</span>
+                        </div>
+                        <p class="dropdown-service-desc">Autonomous AI agents & custom LLM automation</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Col 2: Marketing -->
+                <div class="dropdown-col">
+                  <div class="dropdown-col-title">
+                    <i class="fas fa-bullhorn"></i> Marketing
+                  </div>
+                  <div class="dropdown-items-group">
+                    <a href="javascript:void(0)" onclick="notifyUnavailable('Run Ads & Campaign Management')" class="dropdown-service-card dropdown-service-card-muted">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Run Ads</span>
+                          <span class="dropdown-status-text">Coming Soon</span>
+                        </div>
+                        <p class="dropdown-service-desc">Targeted Google, Meta & LinkedIn paid ads</p>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="notifyUnavailable('Social Media Marketing')" class="dropdown-service-card dropdown-service-card-muted">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-share-nodes"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Social Media Marketing</span>
+                          <span class="dropdown-status-text">Coming Soon</span>
+                        </div>
+                        <p class="dropdown-service-desc">Organic content strategy & community growth</p>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="notifyUnavailable('Digital Marketing')" class="dropdown-service-card dropdown-service-card-muted">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-chart-line"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">Digital Marketing</span>
+                          <span class="dropdown-status-text">Coming Soon</span>
+                        </div>
+                        <p class="dropdown-service-desc">Full-funnel digital marketing & SEO strategies</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Col 3: White Label -->
+                <div class="dropdown-col">
+                  <div class="dropdown-col-title">
+                    <i class="fas fa-handshake"></i> White Label
+                  </div>
+                  <div class="dropdown-items-group">
+                    <a href="white-label-development" class="dropdown-service-card">
+                      <div class="dropdown-service-icon">
+                        <i class="fas fa-handshake"></i>
+                      </div>
+                      <div class="dropdown-service-content">
+                        <div class="dropdown-service-header">
+                          <span class="dropdown-service-title">White-Label Web Dev</span>
+                        </div>
+                        <p class="dropdown-service-desc">100% unbranded backend dev partner for agencies</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </li>
           <li><a href="portfolio" class="nav-link">Portfolio</a></li>
@@ -169,235 +255,64 @@
   <section id="pricing-packages" class="section" style="background: var(--bg-surface);">
     <div class="container">
       <div class="section-header">
-        <div class="section-tag"><i class="fas fa-tags"></i> Transparent Pricing Plans</div>
-        <h2>Mobile App Development <span class="gradient-text">Packages</span></h2>
-        <p>Fixed transparent pricing for high-performance iOS & Android mobile applications. Zero hidden costs.</p>
+        <div class="section-tag"><i class="fas fa-tags"></i> Transparent Pricing</div>
+        <h2>App Development <span class="gradient-text">Packages</span></h2>
+        <p>Fixed transparent pricing for custom mobile app development. Zero hidden fees.</p>
       </div>
 
-      <div class="app-pricing-grid">
-        
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 28px; max-width: 1100px; margin: 0 auto;">
         <!-- Package 1: Starter App -->
-        <div class="app-pricing-card">
-          <div>
-            <div class="app-card-top">
-              <span class="app-card-category"><i class="fas fa-mobile-screen"></i> Starter Tier</span>
-              <span class="app-card-discount">25% OFF</span>
-            </div>
-            
-            <h3 class="app-card-title">Starter App</h3>
-            <p class="app-card-desc">Ideal for startups & businesses needing a sleek, streamlined mobile application to launch fast.</p>
-
-            <div class="app-card-pricing-box">
-              <div class="app-card-price-row">
-                <span class="app-card-orig-price">₹19,999</span>
-                <span class="app-card-price-amount">₹14,999</span>
-                <span class="app-card-price-period">/ one-time</span>
-              </div>
-              <div class="app-card-pill-strip">
-                <span class="app-card-pill"><i class="fab fa-android" style="color:#10b981;"></i> Android or iOS</span>
-                <span class="app-card-pill"><i class="fas fa-layer-group" style="color:var(--primary);"></i> 5 Screens</span>
-                <span class="app-card-pill"><i class="fab fa-google-play" style="color:#0284c7;"></i> Play Store</span>
-              </div>
-            </div>
-
-            <ul class="app-card-features-list">
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span><strong>Android or iOS</strong> Native/Hybrid App</span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span>Up to <strong>5 Custom Designed Screens</strong></span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span>Clean <strong>REST API Integration</strong> & Data Sync</span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span><strong>Google Play Store</strong> Upload Assistance</span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span>Responsive Design for <strong>Phones & Tablets</strong></span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span>Complete <strong>Source Code Handover</strong></span>
-              </li>
-            </ul>
+        <div class="pricing-card" style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 32px; position: relative;">
+          <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Starter App</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Ideal for startups & local businesses needing a streamlined mobile app.</p>
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 20px;">
+            ₹14,999 <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 400;">/ one-time</span>
           </div>
-
-          <div>
-            <div class="app-card-meta-strip">
-              <div class="app-card-meta-item">
-                <i class="fas fa-clock" style="color: var(--primary);"></i>
-                <span>Delivery in <strong>10 - 14 Business Days</strong></span>
-              </div>
-              <div class="app-card-meta-item">
-                <i class="fas fa-shield-check" style="color: #10b981;"></i>
-                <span><strong>30 Days</strong> Free Bug Warranty Support</span>
-              </div>
-            </div>
-
-            <a href="https://wa.me/919475320402?text=Hello%20Nexus%20Digital,%20I%20want%20to%20order%20the%20Starter%20App%20Package%20(%E2%82%B914,999)." target="_blank" class="app-card-btn app-card-btn-outline">
-              <i class="fab fa-whatsapp" style="font-size: 1.15rem;"></i> Order Starter App
-            </a>
-          </div>
+          <ul style="list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 12px; font-size: 0.92rem; color: var(--text-muted);">
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Android or iOS App</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Up to 5 Custom Screens</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Basic REST API Integration</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Play Store Upload Assistance</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> 30 Days Post-Launch Support</li>
+          </ul>
+          <a href="https://wa.me/919475320402?text=Hi%20Nexus%20Digital,%20I%20am%20interested%20in%20the%20Starter%20App%20Package" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;"><i class="fab fa-whatsapp"></i> Order Starter App</a>
         </div>
 
-        <!-- Package 2: Growth App Solution (Featured) -->
-        <div class="app-pricing-card featured">
-          <div class="app-pricing-badge-popular">
-            <i class="fas fa-crown" style="color: #fde047;"></i> Most Popular & Best Value
+        <!-- Package 2: Growth App (Featured) -->
+        <div class="pricing-card" style="background: var(--bg-card); border: 2px solid var(--primary); border-radius: var(--radius-lg); padding: 32px; position: relative; box-shadow: var(--shadow-glow);">
+          <div style="position: absolute; top: -14px; right: 24px; background: var(--primary); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase;">Most Popular</div>
+          <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Growth App Solution</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Complete cross-platform Android & iOS app with push notifications & Firebase.</p>
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 20px;">
+            ₹34,999 <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 400;">/ one-time</span>
           </div>
-
-          <div>
-            <div class="app-card-top" style="margin-top: 6px;">
-              <span class="app-card-category" style="color: #4f46e5;"><i class="fas fa-bolt"></i> Growth Tier</span>
-              <span class="app-card-discount" style="background: rgba(79, 70, 229, 0.12); color: #4f46e5; border-color: rgba(79, 70, 229, 0.25);">22% OFF</span>
-            </div>
-            
-            <h3 class="app-card-title">Growth App Solution</h3>
-            <p class="app-card-desc">Complete cross-platform Android & iOS solution with real-time Firebase cloud backend & push notifications.</p>
-
-            <div class="app-card-pricing-box">
-              <div class="app-card-price-row">
-                <span class="app-card-orig-price">₹44,999</span>
-                <span class="app-card-price-amount" style="color: #4f46e5;">₹34,999</span>
-                <span class="app-card-price-period">/ one-time</span>
-              </div>
-              <div class="app-card-pill-strip">
-                <span class="app-card-pill"><i class="fab fa-apple" style="color: #0f172a;"></i> & <i class="fab fa-android" style="color: #10b981;"></i> Cross-Platform</span>
-                <span class="app-card-pill"><i class="fas fa-fire" style="color: #f59e0b;"></i> Firebase Auth</span>
-                <span class="app-card-pill"><i class="fas fa-bell" style="color: var(--accent-cyan);"></i> Push Alerts</span>
-              </div>
-            </div>
-
-            <ul class="app-card-features-list">
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span><strong>Dual Platform: Android & iOS</strong> (Flutter/React Native)</span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span>Up to <strong>12 Interactive Screens</strong> & Custom UX</span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span><strong>Firebase Backend</strong>, User Auth & Cloud DB</span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span><strong>Push Notifications Engine</strong> (FCM Alerts)</span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span><strong>Play Store & App Store</strong> Publishing Support</span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span>In-App Search, Filters & <strong>User Profiles</strong></span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span>Google Analytics & <strong>Crashlytics Monitoring</strong></span>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <div class="app-card-meta-strip" style="background: rgba(79, 70, 229, 0.05); border-color: rgba(79, 70, 229, 0.15);">
-              <div class="app-card-meta-item">
-                <i class="fas fa-clock" style="color: #4f46e5;"></i>
-                <span>Delivery in <strong>20 - 30 Business Days</strong></span>
-              </div>
-              <div class="app-card-meta-item">
-                <i class="fas fa-shield-check" style="color: #10b981;"></i>
-                <span><strong>60 Days</strong> Free Priority Support & Updates</span>
-              </div>
-            </div>
-
-            <a href="https://wa.me/919475320402?text=Hello%20Nexus%20Digital,%20I%20want%20to%20order%20the%20Growth%20App%20Solution%20(%E2%82%B934,999)." target="_blank" class="app-card-btn app-card-btn-primary">
-              <i class="fab fa-whatsapp" style="font-size: 1.15rem;"></i> Order Growth App Solution
-            </a>
-          </div>
+          <ul style="list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 12px; font-size: 0.92rem; color: var(--text-muted);">
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Android & iOS Cross-Platform</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Up to 12 Interactive Screens</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Firebase Backend & Authentication</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Push Notifications System</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Play Store & App Store Publishing</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> 60 Days Post-Launch Support</li>
+          </ul>
+          <a href="https://wa.me/919475320402?text=Hi%20Nexus%20Digital,%20I%20am%20interested%20in%20the%20Growth%20App%20Package" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center;"><i class="fab fa-whatsapp"></i> Order Growth App</a>
         </div>
 
         <!-- Package 3: Enterprise App -->
-        <div class="app-pricing-card">
-          <div>
-            <div class="app-card-top">
-              <span class="app-card-category"><i class="fas fa-shield-halved"></i> Enterprise Tier</span>
-              <span class="app-card-discount" style="background: rgba(16, 185, 129, 0.1); color: #10b981; border-color: rgba(16, 185, 129, 0.2);">Save ₹20,000</span>
-            </div>
-            
-            <h3 class="app-card-title">Enterprise Mobile Ecosystem</h3>
-            <p class="app-card-desc">Bespoke high-performance mobile architecture for scalable SaaS, e-commerce, on-demand apps & portals.</p>
-
-            <div class="app-card-pricing-box">
-              <div class="app-card-price-row">
-                <span class="app-card-orig-price">₹99,999</span>
-                <span class="app-card-price-amount">₹79,999</span>
-                <span class="app-card-price-period">/ starting</span>
-              </div>
-              <div class="app-card-pill-strip">
-                <span class="app-card-pill"><i class="fas fa-microchip" style="color:var(--primary);"></i> Swift + Kotlin</span>
-                <span class="app-card-pill"><i class="fas fa-credit-card" style="color:#10b981;"></i> Payment Gateway</span>
-                <span class="app-card-pill"><i class="fas fa-gears" style="color:#ec4899;"></i> Admin Panel</span>
-              </div>
-            </div>
-
-            <ul class="app-card-features-list">
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span><strong>Native iOS & Android</strong> Dedicated Architecture</span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span><strong>Unlimited Custom Screens</strong>, Logic & Workflows</span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span><strong>Payment Gateway Integration</strong> (Razorpay/Stripe)</span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span>Live Location Tracking & <strong>Interactive Maps</strong></span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span>Dedicated <strong>Web Admin Control Panel</strong></span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span>Role-Based Access Control & <strong>DB Encryption</strong></span>
-              </li>
-              <li class="app-card-feature-item">
-                <i class="fas fa-check-circle check-icon"></i>
-                <span><strong>100% App Store & Play Store</strong> Approval SLA</span>
-              </li>
-            </ul>
+        <div class="pricing-card" style="background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 32px; position: relative;">
+          <h3 style="font-size: 1.4rem; margin-bottom: 8px;">Enterprise Mobile Ecosystem</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Bespoke mobile architecture for scalable SaaS, e-commerce, and enterprise portals.</p>
+          <div style="font-size: 2.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 20px;">
+            ₹79,999 <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 400;">/ starting</span>
           </div>
-
-          <div>
-            <div class="app-card-meta-strip">
-              <div class="app-card-meta-item">
-                <i class="fas fa-clock" style="color: var(--primary);"></i>
-                <span>Tailored Delivery: <strong>45 - 60 Days Milestone Plan</strong></span>
-              </div>
-              <div class="app-card-meta-item">
-                <i class="fas fa-shield-check" style="color: #10b981;"></i>
-                <span><strong>1 Full Year Dedicated</strong> SLA & Maintenance</span>
-              </div>
-            </div>
-
-            <a href="https://wa.me/919475320402?text=Hello%20Nexus%20Digital,%20I%20am%20interested%20in%20the%20Enterprise%20Mobile%20Ecosystem%20Package%20(%E2%82%B979,999+)." target="_blank" class="app-card-btn app-card-btn-dark">
-              <i class="fab fa-whatsapp" style="font-size: 1.15rem;"></i> Order Enterprise App
-            </a>
-          </div>
+          <ul style="list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 12px; font-size: 0.92rem; color: var(--text-muted);">
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Native Android & iOS Apps</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Unlimited Custom Screens & Workflows</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Payment Gateway & Live Tracking</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> Dedicated Admin Control Panel</li>
+            <li><i class="fas fa-check" style="color: var(--primary); margin-right: 8px;"></i> 1 Year Dedicated Maintenance & SLA</li>
+          </ul>
+          <a href="https://wa.me/919475320402?text=Hi%20Nexus%20Digital,%20I%20am%20interested%20in%20the%20Enterprise%20App%20Package" target="_blank" class="btn btn-outline" style="width: 100%; justify-content: center;"><i class="fab fa-whatsapp"></i> Order Enterprise App</a>
         </div>
-
       </div>
     </div>
   </section>
@@ -419,7 +334,7 @@
 
           <div class="cta-action-side">
             <a href="contact" class="btn-cta-main">
-              <i class="fas fa-paper-plane"></i> Get Free Proposal
+              <i class="fas fa-paper-plane"></i> <span>Get Free Proposal</span>
             </a>
             <a href="https://wa.me/919475320402" target="_blank" class="btn-cta-whatsapp">
               <i class="fab fa-whatsapp"></i> Chat On WhatsApp
@@ -444,7 +359,7 @@
     </div>
   </section>
 
-    <!-- Ultra-Professional Agency Footer -->
+  <!-- Ultra-Professional Agency Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -453,33 +368,28 @@
           <a href="/" class="logo" style="margin-bottom: 18px;">
             <img src="assets/images/logo.png" alt="Nexus Digital Logo" class="nav-logo-img">
             <div class="logo-text">
-              <span class="brand-title" style="color: #ffffff;">Nexus<span
-                  style="color: var(--primary)">Digital</span></span>
+              <span class="brand-title" style="color: #ffffff;">Nexus<span style="color: var(--primary)">Digital</span></span>
               <span class="brand-tagline" style="color: #94a3b8;">Digital Marketing</span>
             </div>
           </a>
-          <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6; margin-bottom: 22px;">Crafting bespoke,
-            high-converting digital experiences that elevate modern brands & drive real growth.</p>
-                    <div class="footer-socials">
+          <p style="color: #94a3b8; font-size: 0.92rem; line-height: 1.6; margin-bottom: 22px;">Crafting bespoke, high-converting digital experiences that elevate modern brands & drive real growth.</p>
+          <div class="footer-socials">
             <a href="https://wa.me/919475320402" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61592571871118" target="_blank" title="Facebook"><i
-                class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/nexusofficial.digital/" target="_blank" title="Instagram"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/nexus-digital2/" target="_blank" title="LinkedIn"><i
-                class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61592571871118" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nexusofficial.digital/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/nexus-digital2/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
 
-        <!-- Col 2: Quick Links -->
+                <!-- Col 2: Useful Links -->
         <div class="footer-col">
-          <h4>Navigation</h4>
+          <h4>Useful Links</h4>
           <ul class="footer-links">
-            <li><a href="/"><i class="fas fa-chevron-right"></i> Home</a></li>
-            <li><a href="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
-            <li><a href="website-design"><i class="fas fa-chevron-right"></i> Website Design</a></li>
+            <li><a href="website-design"><i class="fas fa-chevron-right"></i> Website Development</a></li>
+            <li><a href="app-development"><i class="fas fa-chevron-right"></i> App Development</a></li>
+            <li><a href="cotmit-ai"><i class="fas fa-chevron-right"></i> Cotmit AI</a></li>
+            <li><a href="white-label-development"><i class="fas fa-chevron-right"></i> White-Label Web Dev</a></li>
             <li><a href="portfolio"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-            <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
           </ul>
         </div>
 
@@ -490,7 +400,10 @@
             <li>
               <i class="fas fa-phone"></i>
               <div>
-                <span>Call Us</span><a href="tel:+918972722259" style="display:block;">+91 89727 22259</a><a href="tel:+919475320402" style="display:block; margin-top:2px;">+91 94753 20402</a></div>
+                <span>Call Us</span>
+                <a href="tel:+918972722259" style="display:block;">+91 89727 22259</a>
+                <a href="tel:+919475320402" style="display:block; margin-top:2px;">+91 94753 20402</a>
+              </div>
             </li>
             <li>
               <i class="fas fa-envelope"></i>
@@ -503,7 +416,7 @@
               <i class="fas fa-location-dot"></i>
               <div>
                 <span>Address</span>
-                <p>Saratnagar, Ashokenagar Kalyangarh, WB - 743223</p>
+                <p style="margin:0; font-size:0.85rem; color:#94a3b8;">Ashokenagar Kalyangarh, West Bengal - 743223</p>
               </div>
             </li>
           </ul>
@@ -511,34 +424,20 @@
 
         <!-- Col 4: Newsletter -->
         <div class="footer-col">
-          <h4 style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin-bottom: 22px; position: relative; padding-bottom: 10px;">Newsletter</h4>
-          <p style="color: #94a3b8; font-size: 0.88rem; line-height: 1.6; margin-bottom: 16px;">Subscribe to get the latest web design tips, marketing strategies & exclusive updates.</p>
-          <form action="https://formsubmit.co/nexusofficial.digital@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
-            <input type="hidden" name="_subject" value="New Newsletter Subscriber - Nexus Digital">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <div style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
-              <input type="email" name="email" placeholder="Enter your email address" required style="width: 100%; padding: 12px 16px; border-radius: 8px; background: #1e293b; border: 1px solid #334155; color: #ffffff; font-size: 0.9rem; outline: none; box-sizing: border-box;">
-              <button type="submit" style="width: 100%; padding: 12px 20px; border-radius: 8px; background: linear-gradient(135deg, #4f46e5, #4338ca); color: #ffffff; font-weight: 700; font-size: 0.9rem; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);"><i class="fas fa-paper-plane"></i> Subscribe</button>
-            </div>
+          <h4>Newsletter</h4>
+          <p style="color: #94a3b8; font-size: 0.88rem; line-height: 1.5; margin-bottom: 16px;">Subscribe for exclusive web design insights and digital growth strategies.</p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Enter your email" required style="background: #1e293b; border: 1px solid #334155; color: #fff; padding: 10px 14px; border-radius: 8px; width: 100%; margin-bottom: 10px;">
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #4f46e5, #4338ca);">Subscribe <i class="fas fa-paper-plane"></i></button>
           </form>
         </div>
       </div>
 
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <div class="footer-bottom-flex">
-          <p>&copy; 2026 Nexus Digital. All Rights Reserved. Engineered with precision.</p>
-          <div class="footer-bottom-right">
-            <div class="footer-legal-nav">
-              <a href="privacy-policy" class="footer-legal-link">Privacy Policy</a>
-              <span class="footer-legal-divider">•</span>
-              <a href="terms-and-conditions" class="footer-legal-link">Terms & Conditions</a>
-            </div>
-            <button onclick="scrollToTop()" class="back-to-top-btn" title="Back to Top">
-              Back to Top <i class="fas fa-arrow-up"></i>
-            </button>
-          </div>
+      <div class="footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.08); margin-top: 50px; padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; font-size: 0.85rem; color: #64748b;">
+        <p>© 2026 Nexus Digital. All Rights Reserved.</p>
+        <div style="display: flex; gap: 20px;">
+          <a href="privacy-policy" style="color: #64748b; text-decoration: none;">Privacy Policy</a>
+          <a href="terms-and-conditions" style="color: #64748b; text-decoration: none;">Terms of Service</a>
         </div>
       </div>
     </div>
